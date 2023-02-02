@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f5fc;
+  width: 100vw;
+  height: 100vh;
+}
+#mainContainer {
+  background: #f3f5fc;
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+#logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  padding: 0px;
+  width: 120px;
+  height: 48px;
+  top: 2.77%;
+  left: 3.9%;
+  gap: 40px;
+}
+#logoContainer img {
+  position: absolute;
+  left: 36.67%;
+  right: 37.43%;
+  top: 0%;
+  bottom: 0%;
+  transition: all 2s;
+}
+#logoContainer img:hover {
+  transform: rotate(720deg);
+}
+.userInputBox {
+  position: absolute;
+  left: 16.66%;
+  top: 16.4%;
+  width: 40.06%;
+  height: 39.06%;
+}
+
+#userInput {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0a3871;
+  border: none;
+  background-color: #f3f5fc;
+  text-decoration: none;
+  outline: none;
+}
+
+#userInput::placeholder {
+  color: #0a3871;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 229px;
+  height: 18px;
+  left: 16.66%;
+  top: 83.1%;
+}
+
+.frame-1 p {
+  width: 229px;
+  height: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  position: absolute;
+  width: 47.223%;
+  height: 6.542%;
+  left: 16.667%;
+  top: 86.425%;
+}
+
+#button-encrypt,
+#button-disencrypt {
+  width: 48.23%;
+  height: 100%;
+  border-radius: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+}
+#button-encrypt {
+  background: #0a3871;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#button-encrypt span {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+#button-disencrypt {
+  background: #d8dfe8;
+  border: 1px #0a3871 solid;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#button-disencrypt span {
+  color: #0a3871;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+#button-disencrypt:hover {
+  transform: scale(1.02);
+}
+#button-encrypt:hover {
+  transform: scale(1.02);
+}
+.containerRectangle {
+  position: relative;
+  width: 27.77%;
+  height: 100%;
+  left: 69.445%;
+}
+
+.rectangle-1 {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  top: 4%;
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+
+.rectangle-1:hover {
+  transform: scale(1.02);
+}
+
+.rectangle-1 img {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 84%;
+  height: 32.2%;
+  top: 20%;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: 84%;
+  height: 12.92%;
+  left: 8%;
+  top: 61%;
+}
+.frame-5 h3 {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.frame-5 h5 {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.copyBttnContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  top: 92%;
+  width: 50%;
+  height: 10%;
+}
+
+.copyBttn {
+  width: 100%;
+  background: none;
+  color: #0a3871;
+  border: none;
+  cursor: pointer;
+  transition: 1.5s ease all;
+}
+.copyBttn span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+.copyBttn svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  border-radius: 5px;
+}
+.copyBttn rect {
+  width: 100%;
+  height: 100%;
+  stroke: #0a3871;
+  stroke-width: 6px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: 1.5s ease all;
+}
+.copyBttn:hover rect {
+  stroke-dashoffset: 0;
+}
+
+.copyBttn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: block;
+  height: 10%;
+}
+.iconContainer {
+  width: 10%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.iconContainer a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #343a40;
+  margin: 0;
+}
+
+footer h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 16px;
+  text-align: center;
+  color: #343a40;
+  margin: 0;
+}
+
+.textEncrypterContainer {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.textEncrypted {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #0a3871;
+  top: 9%;
+  left: 3%;
+  border: none;
+  width: 90%;
+  height: 90%;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+@media only screen and (max-width: 667px) {
+  .userInputBox {
+    position: absolute;
+    left: 16.66%;
+    top: 16.4%;
+    width: 70%;
+    height: 39.06%;
+  }
+  .containerRectangle {
+    position: relative;
+    top: 90%;
+    width: 80%;
+    left: 10%;
+  }
+  .frame-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 16.66%;
+    top: 73.1%;
+  }
+  .frame-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 70%;
+    height: 6.542%;
+    left: 10%;
+    top: 76.425%;
+  }
+  footer {
+    position: relative;
+    top: 100%;
+  }
+  .iconContainer {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

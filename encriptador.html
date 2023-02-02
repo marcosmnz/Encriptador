@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./main.js"></script>
+    <script defer
+      src="https://kit.fontawesome.com/0016490124.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="logoContainer">
+        <img src="./sources/Vector.png" alt="Logo Alura" />
+      </div>
+      <form class="userInputBox" action="">
+        <textarea id="userInput" placeholder="Ingresa tu texto aquí"></textarea>
+      </form>
+      <div class="frame-1">
+        <p>
+          <i class="fa-solid fa-circle-info"></i>
+          Solo letras minúsculas y sin acentos.
+        </p>
+      </div>
+      <div class="frame-3">
+        <button id="button-encrypt"><span>Encriptar</span></button>
+        <button id="button-disencrypt"><span>Desencriptar</span></button>
+      </div>
+      <div class="containerRectangle">
+        <div class="rectangle-1">
+          <!-- SAMPLE TEXT FOR INNERHTML -->
+          <!-- <div class="textEncrypterContainer">
+            <p class="textEncrypted"></p>
+        </div> -->
+
+          <img src="./sources/Muñeco.png" alt="" />
+          <div class="frame-5">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <h5>Ingrese el texto que desea encriptar o desencriptar</h5>
+          </div>
+        </div>
+        <div class="copyBttnContainer">
+          <button class="copyBttn">
+            <span id="textButton">COPY TEXT</span>
+            <svg><rect x="0" y="0" fill="none"></rect></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>Created by Marcos Muñoz</h3>
+      <div class="iconContainer">
+        <a target="_blank" href="https://www.linkedin.com/in/marcosmu%C3%B1oz1/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/marcosmnz"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/marco.mnz/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
